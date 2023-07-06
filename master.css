@@ -1,0 +1,51 @@
+:root {
+    --orange-color: #ff8e00;
+    --orange-hover-color: #ff8210;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body p {
+    margin: 0;
+}
+
+/*HEADER*/
+header {
+    background-image: url("./images/bg_header.png");
+    background-size: cover;
+    color: #ffffff;
+    height: 625px;
+    width: 100%;
+}
+header > div.nav-content {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+nav > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+header > div.get-quote {
+    bottom: 120px;
+    position: absolute;
+    left: 30px;
+}
+header button {
+    background-color: var(--orange-color);
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+}
+
+header button:hover {
+    background-color: var(--orange-hover-color);
+}
