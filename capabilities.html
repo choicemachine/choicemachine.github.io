@@ -1,19 +1,88 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choice Machine</title>
-</head>
-<body>
-  <div>
-    <h2>
-      At Choice Machine, we are capable of handling various media for both high and low
-      volume production, with a focus on quality and time efficiency. Our company caters to a
-      wide range of customers from individuals to large corporations. Our capabilities are
-      constantly increasing so that we may better cater to our customer's specific manufacturing
-      needs.
-    </h2>
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice Machine</title>
+    <style>
+      :root {
+        --main-color: #ff8e00;
+      }
 
-</body>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      h1 span {
+        color: var(--main-color);
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      thead {
+        color: white;
+      }
+      
+      thead tr {
+        background-color: var(--main-color);
+        height: 64px;
+      }
+      
+      thead th {
+      }
+
+      thead th div {
+        align-items: center;
+        border-right: solid 1px white;
+        display: inline-flex;
+        flex-direction: column;
+        height: 48px;
+        justify-content: center;
+        width: 100%;
+      }
+
+      thead th:last-child span {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><span>//</span> OUR CAPABILITIES <span>//</span></h1>
+      <h2>
+        At Choice Machine, we are capable of handling various media for both high and low
+        volume production, with a focus on quality and time efficiency. Our company caters to a
+        wide range of customers from individuals to large corporations. Our capabilities are
+        constantly increasing so that we may better cater to our customer's specific manufacturing
+        needs.
+      </h2>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <div>
+              <span>CNC</span>
+              <span></span>
+            </div>
+          </th>
+          <th>
+            <div>
+              <span>Capability</span>
+              <span>(inches)</span>
+            </div>
+          </th>
+          <th>
+            <div>
+              <span>Tolerance</span>
+              <span>(inches)</span>
+            </div>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </body>
 </html>
