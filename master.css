@@ -5,12 +5,21 @@
 
 /* BODY */
 body {
+    font-family: Arial;
     margin: 0;
     overflow-x: hidden;
 }
 
 body p {
     margin: 0;
+}
+
+/* HEADINGS */
+h2 {
+    font-size: 40px;
+}
+h4 {
+    font-size: 26px;
 }
 
 /*HEADER*/
@@ -21,19 +30,38 @@ header {
     height: 625px;
     width: 100%;
 }
+header > img {
+    position: absolute;
+    left: 90px;
+    width: 350px;
+}
 header > div.nav-content {
     position: absolute;
-    right: 30px;
+    right: 100px;
     top: 30px;
+}
+header > div.nav-content p {
+    display: inline;
+    margin-bottom: 10px;
+}
+nav {
+    margin-top: 15px;
 }
 nav > a {
     color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav > a:hover {
+    color: var(--orange-hover-color);
+    font-size: 16px;
     text-decoration: none;
 }
 header > div.get-quote {
     bottom: 120px;
     position: absolute;
-    left: 30px;
+    left: 100px;
 }
 header button {
     background-color: var(--orange-color);
@@ -41,8 +69,9 @@ header button {
     border-radius: 20px;
     color: #ffffff;
     cursor: pointer;
+    font-size: 16px;
     font-weight: bold;
-    padding: 10px;
+    padding: 15px;
     position: relative;
 }
 
