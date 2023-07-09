@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choice Machine</title>
+    <link rel="icon" href="./images/logo.webp">
+    <link rel="stylesheet" href="master.css">
     <style>
       :root {
         --main-color: #ff8e00;
@@ -35,13 +37,33 @@
         width: 100%;
       }
 
-      thead th:last-child span {
+      thead th:last-child p {
         border: none;
       }
     </style>
   </head>
   <body>
-    <div>
+  <header>
+    <div class="header-content">
+      <img src="./images/logo.webp" alt="logo" />
+      <div class="nav-content">
+        <p>6501 Navigation Blvd, Houston, TX 77011</p>
+        <p>985-226-9835</p>
+        <nav>
+          <a href="/">SERVICES</a> /
+          <a href="capabilities.html">CAPABILITIES</a> /
+          <a href="/">ABOUT</a> /
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+      <div class="get-quote">
+        <h4>YOUR CNC MANUFACTURING <br> INVENTORY  SOLUTION</h4>
+        <button> &#10142; GET YOUR QUOTE</button>
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <section class="capabilities">
       <h2><span>//</span> OUR CAPABILITIES <span>//</span></h2>
       <p>
         At Choice Machine, we are capable of handling various media for both high and low
@@ -50,31 +72,30 @@
         constantly increasing so that we may better cater to our customer's specific manufacturing
         needs.
       </p>
-    </div>
-
-    <table>
-      <thead>
+      <table>
+        <thead>
         <tr>
           <th>
             <div>
-              <span>CNC</span>
-              <span></span>
+              <p>CNC</p>
             </div>
           </th>
           <th>
             <div>
-              <span>Capability</span>
-              <span>(inches)</span>
+              <p>Capability</p>
+              <p>(inches)</p>
             </div>
           </th>
           <th>
             <div>
-              <span>Tolerance</span>
-              <span>(inches)</span>
+              <p>Tolerance</p>
+              <p>(inches)</p>
             </div>
           </th>
         </tr>
-      </thead>
-    </table>
+        </thead>
+      </table>
+    </section>
+  </div>
   </body>
 </html>
