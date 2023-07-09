@@ -1,0 +1,194 @@
+:root {
+    --orange-color: #ff8e00;
+    --orange-hover-color: #ff8210;
+}
+
+/* BODY */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body p {
+    margin: 0;
+}
+
+/* HEADINGS */
+
+h2 {
+    font-size: 40px;
+}
+h4 {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+span {
+    color: var(--orange-color);
+}
+
+/*HEADER*/
+
+header {
+    background-image: url("./images/bg_header.png");
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    height: 625px;
+    justify-content: center;
+    width: 100%;
+}
+
+div.header-content {
+    max-width: 1200px;
+    width: 94%;
+}
+
+header img {
+    width: 350px;
+}
+header div.nav-content {
+    position: absolute;
+    right: 130px;
+    top: 30px;
+}
+header div.nav-content p {
+    display: inline;
+    margin-bottom: 10px;
+}
+nav {
+    margin-top: 25px;
+}
+nav > a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav > a:hover {
+    color: var(--orange-hover-color);
+    text-decoration: none;
+}
+header div.get-quote {
+    bottom: 120px;
+    position: absolute;
+}
+header button {
+    background-color: var(--orange-color);
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+header button:hover {
+    background-color: var(--orange-hover-color);
+}
+
+/* MAIN SECTIONS */
+
+div.main-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 94%;
+}
+
+/* SERVICES */
+
+div.service-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.service {
+    cursor: pointer;
+    height: 300px;
+    position: relative;
+    width: 380px;
+}
+
+div.service h4 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+div.service > img {
+    height: 220px;
+    width: 100%;
+}
+
+div.title {
+    align-items: center;
+    background-color: #312e2d;
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+div.overlay {
+    align-items: center;
+    background-color: var(--orange-color);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+div.overlay > h4 {
+    margin-bottom: 15px;
+    padding-left: 0;
+}
+
+div.overlay > p {
+    width: 80%
+}
+
+div.service:hover div.overlay {
+    opacity: 100%;
+}
+
+/* ABOUT US */
+
+div.video-container {
+    aspect-ratio: 2/1;
+    background-color: #312e2d;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+section.about-us > p {
+    line-height: 1.35rem;
+}
+
+/* CAPABILITIES */
+
+section.capabilities > h2 {
+    align-self: flex-start;
+}
+
+section.capabilities > p {
+    line-height: 1.35rem;
+}
+
+section.capabilities > table {
+    margin-top: 20px;
+}
