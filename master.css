@@ -42,11 +42,13 @@ header {
     display: flex;
     height: 625px;
     justify-content: center;
+    margin-bottom: 50px;
     width: 100%;
 }
 
 div.header-content {
     max-width: 1200px;
+    position: relative;
     width: 94%;
 }
 
@@ -59,7 +61,6 @@ header div.nav-content {
     top: 30px;
 }
 header div.nav-content p {
-    display: inline;
     margin-bottom: 10px;
 }
 nav {
@@ -76,22 +77,26 @@ nav > a:hover {
     text-decoration: none;
 }
 header div.quote-button {
-    bottom: 120px;
+    bottom: 30px;
     position: absolute;
 }
 header button {
     background-color: var(--orange-color);
     border: none;
     border-radius: 20px;
-    color: #ffffff;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
     padding: 15px;
 }
 
 header button:hover {
     background-color: var(--orange-hover-color);
+}
+
+header button a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* MAIN SECTIONS */
@@ -107,14 +112,21 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
     max-width: 1200px;
     width: 94%;
 }
 
 /* SERVICES */
 
+section#services > p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
 div.service-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
@@ -123,7 +135,7 @@ div.service {
     cursor: pointer;
     height: 300px;
     position: relative;
-    width: 380px;
+    width: 390px;
 }
 
 div.service h3 {
@@ -176,25 +188,26 @@ div.service:hover div.overlay {
 div.video-container {
     aspect-ratio: 2/1;
     background-color: var(--dark-gray);
-    margin-bottom: 20px;
     width: 100%;
 }
 
-section.about-us > p {
+section#about-us > p {
+    font-size: 18px;
     line-height: 1.35rem;
+    margin-top: 20px;
 }
 
 /* GET QUOTE */
 
-section.get-quote {
+section#get-quote {
     margin-bottom: 50px;
 }
 
-section.get-quote h2 {
+section#get-quote h2 {
     align-self: flex-start;
 }
 
-.get-quote h4 {
+#get-quote h4 {
     margin: 10px 0px;
 }
 
@@ -222,15 +235,15 @@ iframe  {
 
 /* CAPABILITIES */
 
-section.capabilities > h2 {
+section#capabilities > h2 {
     align-self: flex-start;
 }
 
-section.capabilities > p {
+section#capabilities > p {
     line-height: 1.35rem;
 }
 
-section.capabilities > table {
+section#capabilities > table {
     margin-top: 20px;
 }
 
@@ -251,6 +264,7 @@ footer {
     font-size: 12px;
     height: 60px;
     justify-content: center;
+    margin-top: 40px;
     width: 100%;
 }
 
