@@ -237,6 +237,14 @@ div.contact-container {
     width: 100%
 }
 
+div.form {
+    width: 46%;
+}
+
+div.address {
+    width: 46%;
+}
+
 div.address p {
     margin-bottom: 5px;
     max-width: 380px;
