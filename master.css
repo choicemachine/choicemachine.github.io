@@ -258,7 +258,7 @@ div.address p:last-child {
 iframe  {
     height: 350px;
     margin-top: 10px;
-    width: 500px;
+    width: 100%;
 }
 
 /* CAPABILITIES */
@@ -397,7 +397,16 @@ footer a:hover {
     }
 
     div.contact-container {
+        align-items: center;
         flex-direction: column;
+    }
+
+    div.form {
+        width: 90%;
+    }
+
+    div.address {
+        width: 100%;
     }
 
     section#get-quote iframe {
