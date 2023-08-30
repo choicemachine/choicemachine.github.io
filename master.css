@@ -37,7 +37,7 @@ span {
 /*HEADER*/
 
 header {
-    background-image: url("./images/bg_header.png");
+    background-image: url("./webp/bg_header.webp");
     background-size: cover;
     color: #ffffff;
     display: flex;
